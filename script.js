@@ -1,7 +1,12 @@
 const gifCarousel = document.getElementById("gif-carousel");
 
 // Fetch the contents of the "assets" folder
-fetch("./assets/")
+const url = window.location.href;
+const baseUrl = url.substring(0, url.lastIndexOf("/"));
+const assetsUrl = `${baseUrl}/assets/`;
+
+console.log('Path:',assetsUrl)
+fetch(assetsUrl)
   .then(response => response.text())
   .then(data => {
     // Parse the list of files from the HTML response
@@ -16,4 +21,6 @@ fetch("./assets/")
       img.alt = "GIF " + (i + 1);
       gifCarousel.appendChild(img);
     }
-  });
+  }
+);
+

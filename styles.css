@@ -20,21 +20,8 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
-  }
-  
-  section {
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 20px;
-  }
+  }  
 
-  section #carrousel{
-    all: inherit;
-    width: 100%;
-  }
-  
   section h2 {
     margin-top: 0;
   }
@@ -47,6 +34,24 @@ body {
   li {
     list-style: none;
   }
+
+  .section-box {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+  }
+
+  .section-box-flat{
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+  }    
 
   #gif-carousel {
     display: flex;
